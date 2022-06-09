@@ -1,0 +1,9 @@
+<div *ngFor="let product of productList">
+  <div (click)="openProduct(product.product_id)">
+    <app-product [name]="product.name" [description]="product.description" [price]="product.price"></app-product>
+
+  </div>
+
+</div>
+
+

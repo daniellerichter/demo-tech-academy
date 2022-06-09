@@ -1,0 +1,5 @@
+<div *ngIf="product" class="product-detail">
+  <app-product [name]="product.name" [description]="product.description" [price]="product.price"></app-product>
+  <button type="button" (click)="addToCart(product)">Add to cart</button>
+</div>
+
